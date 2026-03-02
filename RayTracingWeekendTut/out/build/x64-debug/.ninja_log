@@ -1,7 +1,9 @@
 # ninja log v6
-26	921	7937700787593474	CMakeFiles/RayTracingWeekendTut.dir/RayTracingWeekendTut.cpp.obj	bf0c3b49e5b27ade
-922	1118	7937700796559983	RayTracingWeekendTut.exe	dd8be0d67ac8820a
-5	1009	7937742449050672	CMakeFiles/RayTracingWeekendTut.dir/RayTracingWeekendTut.cpp.obj	bf0c3b49e5b27ade
-1010	1280	7937742459088025	RayTracingWeekendTut.exe	dd8be0d67ac8820a
-24	998	7937745630281893	CMakeFiles/RayTracingWeekendTut.dir/RayTracingWeekendTut.cpp.obj	bf0c3b49e5b27ade
-999	1194	7937745640043385	RayTracingWeekendTut.exe	dd8be0d67ac8820a
+19	1089	7941129381003444	CMakeFiles/RayTracingWeekendTut.dir/RayTracingWeekendTut.cpp.obj	bf0c3b49e5b27ade
+1093	1326	7941129391752092	RayTracingWeekendTut.exe	dd8be0d67ac8820a
+12	1299	7941159464674412	CMakeFiles/RayTracingWeekendTut.dir/RayTracingWeekendTut.cpp.obj	bf0c3b49e5b27ade
+1300	1585	7941159477551505	RayTracingWeekendTut.exe	dd8be0d67ac8820a
+5	1081	7941161575042900	CMakeFiles/RayTracingWeekendTut.dir/RayTracingWeekendTut.cpp.obj	bf0c3b49e5b27ade
+1082	1284	7941161585816318	RayTracingWeekendTut.exe	dd8be0d67ac8820a
+21	1066	7941162457927394	CMakeFiles/RayTracingWeekendTut.dir/RayTracingWeekendTut.cpp.obj	bf0c3b49e5b27ade
+1067	1262	7941162468388834	RayTracingWeekendTut.exe	dd8be0d67ac8820a

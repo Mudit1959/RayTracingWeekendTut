@@ -12,7 +12,7 @@ endif()
 project ("RayTracingWeekendTut")
 
 # Add source to this project's executable.
-add_executable (RayTracingWeekendTut "RayTracingWeekendTut.cpp" "RayTracingWeekendTut.h" "hittable.h" "Sphere.h" "hittable_list.h" "common.h")
+add_executable (RayTracingWeekendTut "RayTracingWeekendTut.cpp" "RayTracingWeekendTut.h" "hittable.h" "Sphere.h" "hittable_list.h" "common.h" "interval.h" "camera.h" "material.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET RayTracingWeekendTut PROPERTY CXX_STANDARD 20)

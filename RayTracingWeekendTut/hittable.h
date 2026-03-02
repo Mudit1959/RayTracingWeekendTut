@@ -4,12 +4,15 @@
 
 #include "common.h"
 
+class material;
+
 // To keep track of where a hit occured, the normal at the point of contact, and the scalar multiplier of ray direction to reach that point
 class hit_record 
 {
 public:
 	point3 p; // Where is the spot on the object surface?
 	vec3 normal; // What is the surface normal?
+	shared_ptr<material> mat; // What is the object made of?
 	double t; // Scalar magnitude of ray to surface
 	bool front_face; //Is the face on the outside of the object?
 
@@ -25,10 +28,10 @@ public:
 class hittable 
 {
 public:
-	
+
 	virtual ~hittable() = default; //???? -> Default constructor?
 
-	virtual bool hit(const ray& r, double ray_tmin, double ray_tmax, hit_record& rec) const = 0;
+	virtual bool hit(const ray& r, interval ray_t, hit_record& rec) const = 0;
 };
 
 #endif

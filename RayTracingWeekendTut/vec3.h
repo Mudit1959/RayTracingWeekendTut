@@ -51,6 +51,21 @@ public:
 
 	double length_squared() const { return f[0] * f[0] + f[1] * f[1] + f[2] * f[2]; }
 
+	static vec3 random() 
+	{
+		return vec3(random_double(), random_double(), random_double());
+	}
+
+	static vec3 random(double min, double max)
+	{
+		return vec3(random_double(min, max), random_double(min, max), random_double(min, max));
+	}
+
+	bool near_zero() const // To check if vector is close to 0,0,0 
+	{
+		auto s = 1e-8;
+		return ((std::fabs(f[0]) < s) && (std::fabs(f[1]) < s) && (std::fabs(f[2]) < s));
+	}
 	
 };
 
@@ -106,6 +121,35 @@ inline vec3 cross(const vec3& u, const vec3& v)
 inline vec3 unit_vector(const vec3& v)
 {
 	return v / v.length();
+}
+
+inline vec3 random_unit_vector()
+{
+	while (true)
+	{
+		vec3 p = vec3::random(-1, 1);
+		float length_sq = p.length_squared();
+		if (1e-160 < length_sq && length_sq <= 1) 
+		{
+			return p / sqrt(length_sq);
+		}
+	}
+}
+
+inline vec3 random_vec_on_hemisphere(const vec3& normal)
+{
+	vec3 in_sphere = random_unit_vector();
+	if(dot(in_sphere, normal) < 0.0)
+	{
+		return -in_sphere;
+	}
+	//else
+	return in_sphere;
+}
+
+inline vec3 reflect(const vec3& v, const vec3& normal) 
+{
+	return v - (2 * dot(v, normal) * normal);
 }
 
 #endif

@@ -5,13 +5,14 @@
 #include "hittable.h"
 
 
-class sphere : public hittable 
+class sphere : public hittable
 {
 public:
 
-	sphere(const point3& c, double r) :center(c), radius(std::fmax(0, r)) {}
+	sphere(const point3& c, double r, shared_ptr<material> m) 
+		:center(c), radius(std::fmax(0, r)), mat(m) {}
 
-	bool hit(const ray& r, double ray_tmin, double ray_tmax, hit_record& rec) const override 
+	bool hit(const ray& r, interval ray_t, hit_record& rec) const override 
 	{
 		// Use the simplified x^2 + y^2 + z^2 = r^2 formula to find if a collision occured -> discriminant
 		vec3 oc = center - r.origin();
@@ -28,14 +29,15 @@ public:
 
 		//Check both roots for validity! -> Check for the object being in front or behind the camera
 		auto root = (h - sqrtd) / a; // No 2*a due to simplification
-		if (root <= ray_tmin || root >= ray_tmax) 
+		if (!ray_t.surrounds(root)) 
 		{
 			root = (h + sqrtd) / a;
-			if (root <= ray_tmin || root >= ray_tmax) { return false; }
+			if (!ray_t.surrounds(root)) { return false; }
 		}
 
 		rec.t = root; // Scalar magnitude of ray's direction to reach sphere
 		rec.p = r.at(rec.t); // Point of contact with sphere
+		rec.mat = mat;
 		vec3 outward_normal = (rec.p - center) / radius; // The NORMALIZED surface normal -> The spot is on the outermost part of a sphere, where everything is a radius away from the center!
 		rec.set_face_normal(r, outward_normal); // Flip normals if in the same direction as the ray 
 
@@ -45,6 +47,7 @@ public:
 private:
 	point3 center;
 	double radius;
+	shared_ptr<material> mat;
 };
 
 #endif // !SPHERE_H

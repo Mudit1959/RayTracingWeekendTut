@@ -4,6 +4,7 @@
 #include <cmath>
 #include <iostream>
 #include <limits>
+#include <cstdlib>
 #include "vector"
 
 using std::make_shared;
@@ -17,9 +18,29 @@ inline double degrees_to_radians(double degrees)
 	return degrees * pi / 180.0;
 }
 
+inline double random_double() 
+{
+	// return a real random number that is in the range [0, 1)
+	// [0 - inclusive of 0
+	// 1) - exclusive of 1
+	return std::rand() / (RAND_MAX + 1.0);
+}
+
+inline double random_double(double min, double max) 
+{
+	// return a real random number in the range [min, max)
+
+	return min + (max - min) * random_double();
+}
+
+
+
+
+
 // Common header files
 #include "color.h"
 #include "ray.h"
 #include "vec3.h"
+#include "interval.h"
 
 #endif

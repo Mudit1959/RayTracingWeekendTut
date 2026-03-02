@@ -19,15 +19,15 @@ class hittable_list : public hittable
 		void add(shared_ptr<hittable> obj) { objects.push_back(obj); }
 
 		// To check if light hit any of the objects
-		bool hit(const ray& r, double ray_tmin, double ray_tmax, hit_record& rec) const override 
+		bool hit(const ray& r, interval ray_t, hit_record& rec) const override 
 		{
 			hit_record check; // To hold details of the closest object to the camera
 			bool anything_yet = false; // Have any objects been hit by light rays emerging from the camera?
-			auto closest_yet = ray_tmax; // Max scalar magnitude along ray's direction to reach closest object
+			auto closest_yet = ray_t.max; // Max scalar magnitude along ray's direction to reach closest object
 
 			for (const auto& o : objects) 
 			{
-				if (o->hit(r, ray_tmin, closest_yet, check)) 
+				if (o->hit(r, interval(ray_t.min, closest_yet), check))
 				{
 					anything_yet = true; // We hit!
 					closest_yet = check.t; // magnitude
