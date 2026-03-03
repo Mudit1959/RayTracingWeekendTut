@@ -13,6 +13,14 @@ public:
 	int samples_per_pixel = 0;
 	int max_depth = 0;
 
+	double vfov = 90;
+	point3 world_pos = point3(0, 0, 0);
+	point3 look_at = point3(0, 0, -1);
+	vec3 v_up = vec3(0, 1, 0);
+
+	double defocus_angle = 0;
+	double focus_dist = 10;
+
 	void render(const hittable& objects) 
 	{
 		initialize(); // Private constructor -> Only one instance exists at any given point of time
@@ -46,22 +54,26 @@ public:
 private:
 
 	
-	int screen_Height;
-	point3 camera_center;
+	int screen_Height; // Height of the screen
+	point3 camera_center; // Same as its world pos
 
-	double averageDenominator;
+	double averageDenominator; // Averaging out a pixel's final color
 	
-	double focal_length;
-	double viewport_height;
+	double focal_length; // Defined by field of view -> Distance of camera from projection plane
+	double viewport_height; 
 	double viewport_width;
 	vec3 viewport_u;
 	vec3 viewport_v;
 
-	vec3 pixel_delta_u;
-	vec3 pixel_delta_v;
-	point3 viewport_ul;
-	point3 pixel_00_loc;
+	vec3 pixel_delta_u; // to move by one pixel HORIZONTALLY along the viewport
+	vec3 pixel_delta_v; // to move by one pixel VERTICALLY along the viewport
+	point3 viewport_ul; // The upper left corner of the viewport
+	point3 pixel_00_loc; // Offseted from upper left corner by half a pixel along both axes
 
+	vec3 u, v, w;
+
+	vec3 defocus_disk_u;
+	vec3 defocus_disk_v;
 
 	void initialize() 
 	{
@@ -78,21 +90,30 @@ private:
 		screen_Height = (screen_Height < 1) ? 1 : screen_Height; // Edit 2 - asR changes to have height be at least 1
 
 		// Camera
-		point3 camera_center = point3(0, 0, 0);
-		focal_length = 1.0; // Distance from viewport and camera center | It is orthogonal - at right angles in both dimensions
-		viewport_height = 2.0; // Arbitrary number - Defines height of viewport in 3D space
+		camera_center = world_pos;
+		// Without blur - focal_length = (look_at - world_pos).length(); // Distance from viewport and camera center | It is orthogonal - at right angles in both dimensions
+		auto h = std::tan(degrees_to_radians(vfov) / 2);
+		viewport_height = 2.0 * h * focus_dist; // Arbitrary number - Defines height of viewport in 3D space
 		viewport_width = viewport_height * (double(screen_Width) / screen_Height); // use the adjusted screen width and height values!
 
-		viewport_u = vec3(viewport_width, 0, 0);
-		viewport_v = vec3(0, -viewport_height, 0);
+		w = unit_vector(look_at - world_pos); // Camera forward
+		u = unit_vector(cross(v_up, w)); // Camera right
+		v = cross(w, u); // Camera up
+
+		viewport_u = viewport_width * u;
+		viewport_v = viewport_height * -v;
 		// The world up is positive, but on the viewport, down is positive
 
 		pixel_delta_u = viewport_u / screen_Width;
 		pixel_delta_v = viewport_v / screen_Height;
 
-		viewport_ul = camera_center + vec3(0, 0, focal_length) - viewport_u / 2 - viewport_v / 2;
+		viewport_ul = camera_center + (focus_dist*w) - viewport_u / 2 - viewport_v / 2;
 		pixel_00_loc = viewport_ul + (0.5f * (pixel_delta_u + pixel_delta_v));
 
+		// ???
+		auto defocus_radius = focus_dist * std::tan(degrees_to_radians(defocus_angle / 2));
+		defocus_disk_u = u * defocus_radius;
+		defocus_disk_v = v * defocus_radius;
 
 	}
 
@@ -104,6 +125,7 @@ private:
 			((y + offset.y()) * pixel_delta_v);
 
 		vec3 ray_dir = (pixel_sampling - camera_center);
+		auto ray_origin = (defocus_angle <= 0) ? camera_center : defocus_sample();
 
 		return ray(camera_center, ray_dir);
 	}
@@ -111,6 +133,12 @@ private:
 	vec3 sample_square() const
 	{
 		return vec3(random_double() - 0.5, random_double() - 0.5, 0);
+	}
+
+	point3 defocus_sample() const
+	{
+		auto p = random_in_unit_disk();
+		return camera_center + (p[0] * defocus_disk_u) + (p[1] * defocus_disk_v);
 	}
 
 	color ray_color(const ray&r, int depth, const hittable& objects) const

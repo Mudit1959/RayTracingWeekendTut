@@ -152,4 +152,21 @@ inline vec3 reflect(const vec3& v, const vec3& normal)
 	return v - (2 * dot(v, normal) * normal);
 }
 
+inline vec3 refract(const vec3& uv, const vec3& n, double etai_by_etat) 
+{
+	float cos_theta = std::fmin(dot(-uv, n), 1.0); // The incident ray and normal have been normalized before this
+	vec3 r_out_perp = etai_by_etat * (uv + cos_theta * n); // perpendicular
+	vec3 r_out_para = -std::sqrt(std::fabs(1-r_out_perp.length_squared())) * n;
+	return r_out_perp + r_out_para;
+}
+
+
+inline vec3 random_in_unit_disk() {
+	while (true) {
+		auto p = vec3(random_double(-1, 1), random_double(-1, 1), 0);
+		if (p.length_squared() < 1)
+			return p;
+	}
+}
+
 #endif

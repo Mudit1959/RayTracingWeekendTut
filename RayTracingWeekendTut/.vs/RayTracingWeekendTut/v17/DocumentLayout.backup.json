@@ -3,31 +3,24 @@
   "WorkspaceRootPath": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\RayTracingWeekendTut.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RayTracingWeekendTut.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\hittable_list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:hittable_list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\Sphere.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sphere.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\include\\memory||{3B902123-F8A7-4915-9F01-361F908088D0}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\material.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:material.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\vec3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:vec3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\RayTracingWeekendTut.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RayTracingWeekendTut.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\material.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:material.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\hittable_list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:hittable_list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\common.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -41,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "common.h",
               "DocumentMoniker": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\common.h",
               "RelativeDocumentMoniker": "common.h",
@@ -59,91 +52,67 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RayTracingWeekendTut.cpp",
+              "DocumentMoniker": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\RayTracingWeekendTut.cpp",
+              "RelativeDocumentMoniker": "RayTracingWeekendTut.cpp",
+              "ToolTip": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\RayTracingWeekendTut.cpp",
+              "RelativeToolTip": "RayTracingWeekendTut.cpp",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAQwFMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-02T23:56:47.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "hittable_list.h",
-              "DocumentMoniker": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\hittable_list.h",
-              "RelativeDocumentMoniker": "hittable_list.h",
-              "ToolTip": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\hittable_list.h",
-              "RelativeToolTip": "hittable_list.h",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAgwB0AAAAAAAAAAAAAAA==",
+              "Title": "camera.h",
+              "DocumentMoniker": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\camera.h",
+              "RelativeDocumentMoniker": "camera.h",
+              "ToolTip": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\camera.h",
+              "RelativeToolTip": "camera.h",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAH8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-02T00:56:52.668Z",
+              "WhenOpened": "2026-03-02T23:15:15.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "memory",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\include\\memory",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\include\\memory",
-              "ViewState": "AgIAAIgGAAAAAAAAAAAgwJ0GAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-03-02T00:56:25.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "vec3.h",
               "DocumentMoniker": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\vec3.h",
               "RelativeDocumentMoniker": "vec3.h",
               "ToolTip": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\vec3.h",
               "RelativeToolTip": "vec3.h",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAgwF8AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAQwIsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-03-02T00:52:55.61Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RayTracingWeekendTut.cpp",
-              "DocumentMoniker": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\RayTracingWeekendTut.cpp",
-              "RelativeDocumentMoniker": "RayTracingWeekendTut.cpp",
-              "ToolTip": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\RayTracingWeekendTut.cpp",
-              "RelativeToolTip": "RayTracingWeekendTut.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-02T00:48:43.919Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Sphere.h",
-              "DocumentMoniker": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\Sphere.h",
-              "RelativeDocumentMoniker": "Sphere.h",
-              "ToolTip": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\Sphere.h",
-              "RelativeToolTip": "Sphere.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-02T00:47:49.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "camera.h",
-              "DocumentMoniker": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\camera.h",
-              "RelativeDocumentMoniker": "camera.h",
-              "ToolTip": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\camera.h",
-              "RelativeToolTip": "camera.h",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAIEAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-02T00:39:36.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "material.h",
               "DocumentMoniker": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\material.h",
               "RelativeDocumentMoniker": "material.h",
               "ToolTip": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\material.h",
               "RelativeToolTip": "material.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAQwGgAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-03-02T00:12:04.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "hittable_list.h",
+              "DocumentMoniker": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\hittable_list.h",
+              "RelativeDocumentMoniker": "hittable_list.h",
+              "ToolTip": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\hittable_list.h",
+              "RelativeToolTip": "hittable_list.h",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAgwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-02T00:56:52.668Z",
               "EditorCaption": ""
             }
           ]
