@@ -80,9 +80,9 @@ int main()
 
 	camera.aspectRatio = 16.00 / 9.0;
 	camera.vfov = 20;
-	camera.screen_Width = 400;
-	camera.samples_per_pixel = 50;
-	camera.max_depth = 10;
+    camera.screen_Width = 1200;
+	camera.samples_per_pixel = 400;
+	camera.max_depth = 50;
 
 	camera.world_pos = point3(13, 2, -3);
 	camera.look_at = point3(0, 0, 0);

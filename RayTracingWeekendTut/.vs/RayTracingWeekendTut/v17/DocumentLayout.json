@@ -47,8 +47,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-02-26T01:51:05.764Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -58,7 +57,7 @@
               "RelativeDocumentMoniker": "RayTracingWeekendTut.cpp",
               "ToolTip": "D:\\Profiles\\mv1959\\Documents\\GitHub\\RayTracingWeekendTut\\RayTracingWeekendTut\\RayTracingWeekendTut.cpp",
               "RelativeToolTip": "RayTracingWeekendTut.cpp",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAQwFIAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAiwFIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-03-02T23:56:47.727Z",
               "EditorCaption": ""
@@ -73,8 +72,7 @@
               "RelativeToolTip": "camera.h",
               "ViewState": "AgIAAHUAAAAAAAAAAAAAAH8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-02T23:15:15.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-02T23:15:15.302Z"
             },
             {
               "$type": "Document",
@@ -86,8 +84,7 @@
               "RelativeToolTip": "vec3.h",
               "ViewState": "AgIAAIMAAAAAAAAAAAAQwIsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-02T00:52:55.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-02T00:52:55.61Z"
             },
             {
               "$type": "Document",
@@ -99,8 +96,7 @@
               "RelativeToolTip": "material.h",
               "ViewState": "AgIAAEgAAAAAAAAAAAAQwGgAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-02T00:12:04.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-02T00:12:04.033Z"
             },
             {
               "$type": "Document",
@@ -112,8 +108,11 @@
               "RelativeToolTip": "hittable_list.h",
               "ViewState": "AgIAAAIAAAAAAAAAAAAgwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-02T00:56:52.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-02T00:56:52.668Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
